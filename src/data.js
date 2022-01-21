@@ -54,7 +54,7 @@ export const sliderItems = [
     },
     {
       id:3,
-      img:"https://www.prada.com/content/dam/pradanux_products/U/UCS/UCS319/1YOTF010O/UCS319_1YOT_F010O_S_182_SLF.png",
+      img:"https://www.pngmart.com/files/7/Denim-Jean-PNG-Picture.png",
     },
     {
       id:4,
@@ -70,7 +70,7 @@ export const sliderItems = [
     },
     {
       id:7,
-      img:"https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+      img:"https://www.pngmart.com/files/1/Vortex-Jacket-Stormtech-System-PNG.png",
     },
     {
       id:8,
