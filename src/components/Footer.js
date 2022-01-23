@@ -86,9 +86,7 @@ const Footer = () => {
         <Description>
           Enim non minim esse non elit eiusmod dolor tempor. Proident minim
           reprehenderit sunt laborum eiusmod cillum consequat non in amet
-          reprehenderit cillum ea. Consectetur reprehenderit adipisicing et
-          cupidatat in culpa ullamco aliqua tempor voluptate minim tempor. Magna
-          est laboris est enim proident consectetur tempor qui sunt ut ea nulla.
+          reprehenderit cillum ea. 
         </Description>
         <SocialContainer>
           <SocialIcon color="3B5999">
