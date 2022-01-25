@@ -1,5 +1,6 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { sliderItems } from "../data";
 import { mobile } from "../responsive";
@@ -36,7 +37,7 @@ const Wrapper = styled.div`
   height: 100%;
   display: flex;
   transition: all 1.5s ease;
-  transform: translate(${props => props.slideIndex * -100}vw);
+  transform: translate(${(props) => props.slideIndex * -100}vw);
 `;
 
 const Slides = styled.div`
@@ -103,7 +104,9 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Description>{item.desc}</Description>
-              <Button>SHOW NOW</Button>
+              <Link to={`/products/${item.cat}`}>
+                <Button>SHOW NOW</Button>
+              </Link>
             </InfoContainer>
           </Slides>
         ))}
