@@ -4,7 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { mobile } from "../responsive";
-
+import { useSelector } from "react-redux";
 const Container = styled.div`
   height: 60px;
   ${mobile({ height: "50px" })}
@@ -68,6 +68,7 @@ const MenuItem = styled.div`
 `;
 
 const Navbar = () => {
+  const cart = useSelector((state) => state.cart);
   return (
     <Container>
       <Wrapper>
@@ -90,7 +91,7 @@ const Navbar = () => {
           </Link>
           <MenuItem>
             <Link to="/cart">
-              <Badge badgeContent={4} color="primary">
+              <Badge badgeContent={cart.quantity} color="primary">
                 <ShoppingCartOutlined />
               </Badge>
             </Link>
