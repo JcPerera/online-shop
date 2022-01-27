@@ -1,21 +1,21 @@
 export const sliderItems = [
   {
     id: 1,
-    img: "https://i.ibb.co/DG69bQ4/2.png",
+    img: "https://www.seekpng.com/png/full/102-1029814_female-fashion-model-png-png-images-of-models.png",
     title: "AUTUMN COLLECTION",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: "fcf1ed",
   },
   {
     id: 2,
-    img: "https://i.ibb.co/cXFnLLV/3.png",
+    img: "https://www.bardot.com/dw/image/v2/BCGZ_PRD/on/demandware.static/-/Sites-bardot-master-catalog/default/dw0984fec2/images/hi-res/bardot/36889SB/36889SB_151309_TF_01.png?sw=1000&sh=1500&sm=fit",
     title: "LOUNGEWEAR LOVE",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: "fbf0f4",
   },
   {
     id: 3,
-    img: "https://www.pngmart.com/files/4/Wedding-Dress-Transparent-Background.png",
+    img: "https://www.pngall.com/wp-content/uploads/5/Cool-Model-Man-PNG-Images.png",
     title: "SUMMER SALE",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: "f5fafd",

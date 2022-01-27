@@ -12,7 +12,7 @@ const Container = styled.div`
 `;
 
 const Announcements = () => {
-  return <Container>Work in Progess - Cart, Product, Login, Register Pages are Completed but not attached to the main application</Container>;
+  return <Container>Super Deal! Free Shipping on Orders Over $50</Container>;
 };
 
 export default Announcements;

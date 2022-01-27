@@ -80,17 +80,19 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>Store</Logo>
+          <Link to="/" style={{ color: "black", textDecoration: "none" }}>
+            <Logo>Store</Logo>
+          </Link>
         </Center>
         <Right>
-          <Link to="/register">
+          <Link to="/register" style={{ color: "black", textDecoration: "none" }}>
             <MenuItem>Register</MenuItem>
           </Link>
-          <Link to="/login">
+          <Link to="/login" style={{ color: "black", textDecoration: "none" }}>
             <MenuItem>Sign In</MenuItem>
           </Link>
           <MenuItem>
-            <Link to="/cart">
+            <Link to="/cart" style={{ color: "black", textDecoration: "none" }}>
               <Badge badgeContent={cart.quantity} color="primary">
                 <ShoppingCartOutlined />
               </Badge>

@@ -4,14 +4,21 @@ import { mobile } from "../responsive";
 
 const Container = styled.div`
   flex: 1;
-  margin: 3px;
+  margin: 3px 5px;
   height: 70vh;
   position: relative;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  &:hover {
+    transform: scale(1.02);
+  }
 `;
 const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
   ${mobile({ height: "20vh" })}
 `;
 const Info = styled.div`
@@ -24,6 +31,12 @@ const Info = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s ease;
+
+  &:hover {
+    transform: translateY(10px);
+  }
+  
 `;
 const Title = styled.h1`
   color: white;

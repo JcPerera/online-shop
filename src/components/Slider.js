@@ -1,11 +1,11 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import { useState } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { sliderItems } from "../data";
 import { mobile } from "../responsive";
 
 const Container = styled.div`
-  width: 100%auto;
+  width: 100%;
   height: 100vh;
   display: flex;
   position: relative;
@@ -16,7 +16,7 @@ const Container = styled.div`
 const Arrow = styled.div`
   width: 50px;
   height: 50px;
-  background-color: #fff7f7;
+  background-color: #ffffff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -28,20 +28,22 @@ const Arrow = styled.div`
   right: ${(props) => props.direction === "right" && "10px"};
   margin: auto;
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.9;
   z-index: 2;
 `;
 
 const Wrapper = styled.div`
   height: 100%;
   display: flex;
+  align-items: center;
   transition: all 1.5s ease;
-  transform: translate(${props => props.slideIndex * -100}vw);
+  transform: translate(${(props) => props.slideIndex * -100}vw);
 `;
 
 const Slides = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   background-color: #${(props) => props.bg};
@@ -49,11 +51,23 @@ const Slides = styled.div`
 
 const ImgContainer = styled.div`
   flex: 1;
-  height: 100%;
+  text-align: center;
+`;
+
+const imageLoader = keyframes`
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 `;
 
 const Image = styled.img`
-  height: 80%;
+  width: 60%;
+  margin: auto;
+  animation: ${imageLoader} 2s forwards;
 `;
 
 const InfoContainer = styled.div`
@@ -61,8 +75,21 @@ const InfoContainer = styled.div`
   padding: 50px;
 `;
 
+const movedown = keyframes`
+  from {
+    transform: translateY(-100px);
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
+
 const Title = styled.h1`
-  font-size: 70px;
+  font-size: 3rem;
+  animation: ${movedown} 1s ease-in-out forwards;
+  opacity: 0;
 `;
 
 const Description = styled.p`
@@ -70,6 +97,8 @@ const Description = styled.p`
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 3px;
+  animation: ${movedown} 1s ease-in-out forwards;
+  opacity: 0;
 `;
 
 const Button = styled.button`
@@ -77,6 +106,8 @@ const Button = styled.button`
   font-size: 20px;
   background-color: transparent;
   cursor: pointer;
+  animation: ${movedown} 1s ease-in-out forwards;
+  opacity: 0;
 `;
 
 const Slider = () => {
